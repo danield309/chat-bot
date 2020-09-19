@@ -22,9 +22,9 @@ def get_vote_bot_response(user_response):
 user_response = ""
 
 while True:
-  user_response = input("Are you registered to vote? (YES/NO/IDK): ")
+  user_response = input("Are you registered to vote? (YES/NO/IDK): ").upper()
 
-  if user_response == 'done':
+  if user_response == 'done'.upper():
       break
 
   bot_response = get_vote_bot_response(user_response)
