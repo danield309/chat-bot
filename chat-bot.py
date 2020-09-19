@@ -9,3 +9,23 @@ def get_vote_bot_response(user_response):
   bot_response_YES = ["Great! You can update your registration at https://www.vote.org/ if you need to."]
   bot_response_NO = ["Please head to https://www.vote.org/ to register."]
   bot_response_IDK = ["No problem! Please head to https://www.vote.org/ to check if you are currently registered."]
+
+  if user_response == "YES":
+    return choice(bot_response_YES)
+  elif user_response == "NO":
+    return choice(bot_response_NO)
+  elif user_response == "IDK":
+    return choice(bot_response_IDK)
+  else:
+    return "Uh.. I didn't quite understand that."
+
+user_response = ""
+
+while True:
+  user_response = input("Are you registered to vote? (YES/NO/IDK): ")
+
+  if user_response == 'done':
+      break
+
+  bot_response = get_vote_bot_response(user_response)
+  print(bot_response)
