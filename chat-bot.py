@@ -7,8 +7,8 @@ print("You may press done to exit the program at anytime.")
 def get_vote_bot_response(user_response):
 
   bot_response_YES = ["Great! You can update your registration at https://www.vote.org/ if you need to."]
-  bot_response_NO = ["Please head to https://www.vote.org/ to register."]
-  bot_response_IDK = ["No problem! Please head to https://www.vote.org/ to check if you are currently registered."]
+  bot_response_NO = ["Please head to https://www.vote.org/register-to-vote/ to register."]
+  bot_response_IDK = ["No problem! Please head to https://www.vote.org/am-i-registered-to-vote/ to check if you are currently registered."]
 
   if user_response == "YES":
     return choice(bot_response_YES)
