@@ -6,9 +6,9 @@ print("You may press done to exit the program at anytime.")
 #Function that responds to user input
 def get_vote_bot_response(user_response):
 
-  bot_response_YES = ["Great! You can update your registration at https://www.vote.org/ if you want to."]
-  bot_response_NO = ["Please head to https://www.vote.org/register-to-vote/ to register."]
-  bot_response_IDK = ["No problem! Please go to https://www.vote.org/am-i-registered-to-vote/ to check if you are currently registered."]
+  bot_response_YES = ["Great!", "Cool! You can update your registration at https://www.vote.org/ if you need to.", "Awesome make sure to vote!"]
+  bot_response_NO = ["Please head to https://www.vote.org/register-to-vote/ to register.", "Oh no! Register @ https://www.vote.org/register-to-vote/ your vote matters <3.", "Biden or Trump won't get elected without your say head to https://www.vote.org/register-to-vote/ to register." ]
+  bot_response_IDK = ["No problem! Head to https://www.vote.org/am-i-registered-to-vote/ to check if you are currently registered.", "To know if you are or aren't registered head to https://www.vote.org/am-i-registered-to-vote/", "No worries you can check your registration status at https://www.vote.org/am-i-registered-to-vote/ ."]
 
 #Takes user input and ties it to the correct bot reponse above
 
